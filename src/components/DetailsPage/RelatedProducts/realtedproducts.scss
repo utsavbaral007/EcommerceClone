@@ -1,0 +1,27 @@
+.realted-products-container {
+	.related-products-content {
+		.toggle-buttons {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			p {
+				&:nth-child(1),
+				&:nth-child(3) {
+					color: black;
+					font-size: 1.5rem;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					cursor: pointer;
+				}
+				&:nth-child(2) {
+					font-size: 0.75rem;
+					font-weight: 500;
+				}
+			}
+			.active {
+				border-bottom: 1px solid black !important;
+			}
+		}
+	}
+}

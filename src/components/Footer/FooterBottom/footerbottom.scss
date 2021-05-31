@@ -1,0 +1,17 @@
+.footer-bottom-content {
+	.footer-bottom-left {
+		p {
+			font-size: 0.75rem;
+		}
+	}
+	.footer-bottom-right {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		img {
+			width: 40px;
+			margin: 0 0 0 10px;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.brands-slider {
+	display: flex;
+	flex-wrap: wrap;
+	.brands-card {
+		padding: 10px;
+		margin: 10px;
+		text-align: center;
+		.brand-image {
+			margin: 0 auto;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

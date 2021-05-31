@@ -1,0 +1,100 @@
+.carousel-div {
+	padding: 7.5rem 0 2rem 0;
+	.carousel-item {
+		.carousel-caption {
+			bottom: 50% !important;
+			transform: translateY(50%);
+			max-width: 350px;
+			h1 {
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+			p {
+				line-height: 30px;
+				text-align: center;
+				font-size: 0.85rem;
+			}
+			button {
+				background: none;
+				outline: none;
+				border: 1px solid white;
+				color: white;
+				padding: 10px 45px;
+				transition: 0.3s all;
+				&:hover {
+					background-color: black;
+					color: white;
+					border: 1px solid black;
+				}
+			}
+			.time {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid grey;
+				flex-wrap: wrap;
+				width: fit-content;
+				margin: 0 auto;
+				div {
+					padding: 5px 20px;
+					&:nth-child(1) {
+						border-right: 2px solid grey;
+					}
+					&:nth-child(2) {
+						border-right: 2px solid grey;
+					}
+					&:nth-child(3) {
+						border-right: 2px solid grey;
+					}
+				}
+			}
+			.btn-group {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				button {
+					margin: 10px;
+					background: white;
+					outline: none;
+					border: 1px solid white;
+					color: black;
+					padding: 10px 45px;
+					transition: 0.3s all;
+					&:hover {
+						background-color: black;
+						color: white;
+						border: 1px solid black;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.carousel-div {
+		padding: 6rem 0 2rem 0;
+	}
+}
+@media (max-width: 768px) {
+	.carousel-caption {
+		position: static;
+		margin: 0 auto;
+		transform: translateY(0) !important;
+		h1 {
+			color: black;
+			position: absolute;
+			width: 100%;
+			top: -50%;
+			color: white;
+			transform: translateY(-50%);
+		}
+		p {
+			color: black;
+		}
+		button {
+			background-color: black !important;
+			border: 1px solid black !important;
+			color: white !important;
+		}
+	}
+}

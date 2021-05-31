@@ -1,0 +1,22 @@
+.scroll-to-top-container {
+	width: fit-content;
+	position: fixed;
+	bottom: 15%;
+	right: 3%;
+	z-index: 10;
+	cursor: pointer;
+	background-color: black;
+	padding: 10px;
+	border-radius: 50%;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s all;
+	svg {
+		font-size: 2rem;
+		color: white;
+	}
+}
+.show-scroll-to-top {
+	opacity: 1;
+	visibility: visible;
+}

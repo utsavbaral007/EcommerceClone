@@ -1,0 +1,50 @@
+.sub-banner-container {
+	.sub-banner-content {
+		.sub-banner {
+			position: relative;
+			.img-box {
+				img {
+					width: 100%;
+				}
+			}
+			.contents {
+				padding: 70px;
+				position: absolute;
+				bottom: 0;
+				p {
+					&:nth-child(1) {
+						text-transform: uppercase;
+						color: white;
+						letter-spacing: 1px;
+						font-size: 2rem;
+						font-weight: 500;
+					}
+					&:nth-child(2) {
+						color: white;
+						font-size: 0.85rem;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.contents {
+		padding: 10px !important;
+	}
+}
+@media (max-width: 768px) {
+	.contents {
+		position: static !important;
+		text-align: center;
+		p {
+			&:nth-child(1) {
+				color: black !important;
+			}
+			&:nth-child(2) {
+				color: grey !important;
+				line-height: 25px !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.cart-menu-container {
+	max-width: 450px;
+	width: 100%;
+	right: 0;
+	background: white;
+	position: fixed;
+	height: 80vh;
+	top: 160px;
+	z-index: 1;
+	overflow-y: scroll;
+	transition: 0.5s all;
+	transform: translateX(100%);
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+	.close-btn {
+		position: absolute;
+		top: 5px;
+		width: fit-content;
+		right: 10px;
+		cursor: pointer;
+		svg {
+			font-size: 1.5rem;
+		}
+	}
+	.cart-menu-content {
+		padding: 30px 25px;
+		.heading {
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			font-weight: 500;
+			letter-spacing: 1px;
+		}
+		.description {
+			font-size: 0.75rem;
+		}
+		.continue-shopping-btn {
+			padding: 10px 0;
+			width: 100%;
+			border: 1px solid black;
+			background: white;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			transition: 0.4s all;
+			&:hover {
+				background: black;
+				color: white;
+			}
+		}
+	}
+}
+.toggle-cart-menu {
+	transform: translateX(0);
+}

@@ -1,0 +1,22 @@
+.brands-container {
+	border-bottom: 1px solid #ececec;
+	.brands-content {
+		.view-all-btn {
+			text-align: center;
+			button {
+				border: 1px solid black;
+				outline: none;
+				padding: 10px 30px;
+				background-color: black;
+				color: white;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				transition: 0.4s all;
+				&:hover {
+					background-color: white;
+					color: black;
+				}
+			}
+		}
+	}
+}

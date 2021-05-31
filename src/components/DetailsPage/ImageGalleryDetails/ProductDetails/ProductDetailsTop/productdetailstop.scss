@@ -1,0 +1,182 @@
+.product-details-top {
+	.brand-name {
+		text-transform: uppercase;
+		font-size: 0.75rem;
+		letter-spacing: 1px;
+		font-weight: 500;
+	}
+	.watch-name {
+		font-size: 1.25rem;
+		font-weight: 600;
+	}
+	.reviews {
+		display: flex;
+		align-items: center;
+		max-width: 350px;
+		width: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.review-count {
+			display: flex;
+			align-items: center;
+			svg {
+				&:not(:last-child) {
+					color: #e66b00;
+				}
+				&:last-child {
+					color: #e7e7e7;
+				}
+			}
+			p {
+				font-size: 0.75rem;
+				margin: 2px 0 0 10px !important;
+			}
+		}
+		.sale-track {
+			display: flex;
+			align-items: center;
+			color: #b20000;
+			svg {
+				margin: 0 5px;
+			}
+			p {
+				font-size: 0.75rem;
+				margin-top: 2px !important;
+			}
+		}
+	}
+	.stock-info {
+		text-transform: uppercase;
+		font-size: 0.75rem;
+		border-bottom: 1px solid black;
+		width: fit-content;
+	}
+	.sku-unit {
+		p {
+			font-size: 0.75rem;
+		}
+	}
+	.price {
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+	.comments {
+		font-size: 0.75rem;
+		line-height: 25px;
+	}
+	.color {
+		font-size: 0.75rem;
+		p {
+			font-weight: 500;
+			svg {
+				margin-bottom: 8px;
+				color: #b20000;
+			}
+		}
+		.more-watches {
+			display: flex;
+			align-items: center;
+			.watches {
+				width: 35px;
+				margin: 5px;
+				border-radius: 50%;
+				border: 3px solid #dadada;
+				overflow: hidden;
+				padding: 0 3px;
+			}
+			img {
+				width: 100%;
+				cursor: pointer;
+			}
+		}
+	}
+	.size {
+		font-size: 0.75rem;
+		p {
+			font-weight: 500;
+			svg {
+				margin-bottom: 8px;
+				color: #b20000;
+			}
+		}
+		.sizes {
+			display: flex;
+			flex-wrap: wrap;
+			p {
+				margin: 5px !important;
+				font-size: 0.8rem;
+				padding: 10px;
+				width: 40px;
+				border-radius: 50%;
+				text-align: center;
+				cursor: pointer;
+				border: 1px solid #1f1f1f;
+			}
+			.active {
+				background-color: #1f1f1f;
+				color: white;
+			}
+		}
+	}
+	.material {
+		font-size: 0.75rem;
+		p {
+			font-weight: 500;
+			svg {
+				margin-bottom: 8px;
+				color: #b20000;
+			}
+		}
+		.material-type {
+			display: flex;
+			align-items: center;
+			button {
+				padding: 10px 25px;
+				margin: 0 5px !important;
+				border: 2px solid #1f1f1f;
+				border-radius: 20px;
+				outline: none;
+				background: none;
+				&:disabled {
+					border: 2px solid #d1d1d1;
+					cursor: not-allowed;
+				}
+			}
+		}
+	}
+	.quantity {
+		p {
+			font-size: 0.75rem;
+			font-weight: 500;
+		}
+		.quantity-content {
+			display: flex;
+			align-items: center;
+			border: 1px solid grey;
+			width: fit-content;
+			.subtract {
+				padding: 10px 20px;
+				border-right: 1px solid grey;
+				text-align: center;
+				cursor: pointer;
+			}
+			.quantity {
+				padding: 10px 40px;
+				border-right: 1px solid grey;
+				text-align: center;
+			}
+			.add {
+				padding: 10px 20px;
+				text-align: center;
+				cursor: pointer;
+			}
+		}
+	}
+	.subtotal {
+		font-size: 0.75rem;
+		span {
+			font-size: 1rem;
+			font-weight: 500;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.company-info {
+	img {
+		width: 150px;
+		margin-bottom: 1.5rem;
+	}
+	p {
+		font-size: 0.85rem;
+	}
+	.footer-icons {
+		svg {
+			margin: 0 20px 0 0;
+			cursor: pointer;
+			font-size: 1.25rem;
+			color: black;
+			transition: 0.3s all;
+			&:nth-child(1):hover {
+				color: #3b5998;
+			}
+			&:nth-child(2):hover {
+				color: #00acee;
+			}
+			&:nth-child(3):hover {
+				color: #db4437;
+			}
+			&:nth-child(4):hover {
+				color: #e60023;
+			}
+			&:nth-child(5):hover {
+				color: #cd486b;
+			}
+			&:nth-child(6):hover {
+				color: #075e54;
+			}
+		}
+	}
+}

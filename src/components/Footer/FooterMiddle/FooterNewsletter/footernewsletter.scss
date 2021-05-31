@@ -1,0 +1,21 @@
+.newsletter-content {
+	.heading {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: 1rem !important;
+		font-weight: 500;
+	}
+	.details {
+		font-size: 0.75rem;
+		line-height: 25px;
+	}
+	.form-demo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: black;
+		padding: 10px 20px;
+		color: white;
+		font-size: 0.85rem;
+	}
+}

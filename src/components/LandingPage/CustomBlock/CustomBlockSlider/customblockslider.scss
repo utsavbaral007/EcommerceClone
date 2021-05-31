@@ -1,0 +1,50 @@
+.custom-block-slider {
+	.custom-block-card {
+		position: relative;
+		padding: 10px;
+		.card-img-container {
+			img {
+				width: 100%;
+			}
+		}
+		.card-img-description {
+			padding: 10px 15px;
+			position: absolute;
+			bottom: 15px;
+			left: 15px;
+			color: white;
+			p {
+				&:nth-child(1) {
+					font-size: 2rem;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					width: fit-content;
+					position: relative;
+					&::after {
+						content: '';
+						position: absolute;
+						height: 2px;
+						left: 0;
+						width: 0;
+						bottom: 5px;
+						background-color: white;
+					}
+				}
+				&:nth-child(2) {
+					font-size: 0.85rem;
+				}
+			}
+		}
+		&:hover {
+			& .card-img-description {
+				p {
+					&:nth-child(1) {
+						&::after {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

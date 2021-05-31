@@ -1,0 +1,69 @@
+.image-gallery {
+	position: relative;
+	.image-gallery-slide {
+		opacity: 0;
+		transition: opacity 1s ease-out !important;
+	}
+	.image-gallery-thumbnail:hover {
+		border: 3px solid black;
+	}
+	.image-gallery-slide.center {
+		opacity: 1;
+		transition: opacity 1s ease-out !important;
+	}
+	.image-gallery-thumbnail.active,
+	.image-gallery-thumbnail:focus {
+		border: 3px solid black;
+	}
+	.zoom-image-text {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		svg {
+			margin: 0 5px;
+		}
+		p {
+			font-size: 0.75rem;
+		}
+	}
+	.ask-expert-btn {
+		text-align: center;
+		button {
+			outline: none;
+			padding: 15px 30px;
+			border: 2px solid #e7e7e7;
+			background-color: white;
+			color: black;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 500;
+			transition: 0.4s all;
+			&:hover {
+				border: 2px solid black;
+				color: white;
+				background-color: black;
+			}
+		}
+	}
+	.our-services {
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+		flex-wrap: wrap;
+		.service {
+			text-align: center;
+			flex: 1;
+			margin: 10px;
+			svg{
+				font-size: 3rem;
+			}
+			p{
+				font-size: 0.75rem;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-weight: 500;
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.editors-pick-container {
+	.editors-pick-content {
+		.heading {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+      flex-wrap: wrap;
+			p {
+				margin: 10px !important;
+				font-size: 1.75rem;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: 500;
+        cursor: pointer;
+				&:nth-child(1) {
+					border-bottom: 1px solid black;
+				}
+			}
+			span {
+				margin: 10px;
+				font-size: 0.75rem;
+			}
+		}
+	}
+}

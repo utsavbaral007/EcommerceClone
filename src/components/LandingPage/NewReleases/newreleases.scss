@@ -1,0 +1,30 @@
+.new-release-container {
+	.new-release-content {
+		.heading {
+			p {
+				font-size: 1.5rem;
+				text-align: center;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: 500;
+				color: black;
+			}
+		}
+		.tabs {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			p {
+				padding: 10px 15px;
+				margin: 5px !important;
+				cursor: pointer;
+        font-size: 0.85rem;
+				&:nth-child(1) {
+					border: 1px solid #5a5a5a;
+          border-radius: 20px;
+				}
+			}
+		}
+	}
+}

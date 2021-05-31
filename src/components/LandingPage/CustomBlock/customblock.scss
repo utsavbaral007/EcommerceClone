@@ -1,0 +1,32 @@
+.custom-block-container {
+	.custom-block-content {
+		.heading {
+			text-align: center;
+			font-size: 1.5rem;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		.description {
+			font-size: 0.75rem;
+			text-align: center;
+		}
+		.view-all-btn {
+			text-align: center;
+			button {
+				padding: 5px 30px;
+				border: 1px solid black;
+				outline: none;
+				background-color: black;
+				color: white;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				transition: 0.4s all;
+				&:hover {
+					background-color: white;
+					color: black;
+				}
+			}
+		}
+	}
+}

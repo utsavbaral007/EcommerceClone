@@ -1,0 +1,42 @@
+.product-description-container {
+	background-color: #f8f8f8;
+	.product-description-content {
+		.left-content {
+			img {
+				width: 100%;
+			}
+		}
+		.right-content {
+			.heading {
+				font-size: 1.5rem;
+				text-align: center;
+				font-weight: 500;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+			.specs-btns {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				button {
+					flex: 1;
+					padding: 15px 0;
+					background: white;
+					border: 2px solid #e7e7e7;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					font-weight: 500;
+					transition: 0.4s all;
+					&:nth-child(1) {
+						margin-right: 10px;
+					}
+				}
+				.active {
+					border: 2px solid black;
+					background: black;
+					color: white;
+				}
+			}
+		}
+	}
+}

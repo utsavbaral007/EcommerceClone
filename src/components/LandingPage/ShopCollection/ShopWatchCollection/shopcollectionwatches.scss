@@ -1,0 +1,51 @@
+.shop-collection-watches {
+	display: flex;
+	flex-wrap: wrap;
+	.watch-card {
+		text-align: center;
+		padding: 10px;
+		img {
+			width: 100%;
+			transition: 0.4s all;
+		}
+		.watch-name {
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 1.25rem;
+			position: relative;
+			width: fit-content;
+			margin: 0 auto !important;
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 3px;
+				left: 0;
+				height: 1px;
+				background: black;
+			}
+		}
+		.product-quantity {
+			font-size: 0.85rem;
+		}
+		button {
+			outline: none;
+			padding: 10px 25px;
+			background: none;
+			border: 1px solid black;
+			transition: 0.4s all;
+		}
+		&:hover {
+			img {
+				opacity: 0.5;
+			}
+			button {
+				color: white;
+				background: black;
+			}
+			.watch-name::after {
+				width: 100%;
+			}
+		}
+	}
+}

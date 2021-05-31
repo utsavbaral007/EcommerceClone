@@ -1,0 +1,33 @@
+.customer-review-container {
+	.customer-review-content {
+		.headers {
+			padding: 4rem 0;
+			background-color: #f8f8f8;
+			position: relative;
+			.heading {
+				font-size: 1.5rem;
+				font-weight: 500;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				text-align: center;
+			}
+			.description {
+				font-size: 0.75rem;
+				text-align: center;
+			}
+			.pointer {
+				width: fit-content;
+				position: absolute;
+				bottom: -30px;
+				margin: 0 auto;
+				left: 50%;
+				transform: translateX(-50%);
+				svg {
+					font-size: 3rem;
+					transform: rotate(180deg);
+					color: #f8f8f8;
+				}
+			}
+		}
+	}
+}
