@@ -1,8 +1,9 @@
 import React from 'react'
 import { AiFillStar, BsFlag } from 'react-icons/all'
+import { withRouter } from 'react-router-dom'
 import './allreviews.scss'
 
-const AllReviews = () => {
+const AllReviews = ({history}) => {
 	return (
 		<div className="all-reviews padding-content">
 			<div className="write-review pb-5">
@@ -59,7 +60,7 @@ const AllReviews = () => {
 				</div>
 			</div>
 			<div className="navigator">
-				<p className="mx-2">Home</p>
+				<p onClick = {() => history.push('/')} className="mx-2">Home</p>
 				<span>&#8250;</span>
 				<p className="mx-2">Milancelos</p>
 				<span>&#8250;</span>
@@ -69,4 +70,4 @@ const AllReviews = () => {
 	)
 }
 
-export default AllReviews
+export default withRouter(AllReviews)

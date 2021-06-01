@@ -47,6 +47,7 @@ const Navbar = ({ scrollFixed }) => {
 					sideBarRef={sideBarRef}
 					overlayRef={overlayRef}
 					handleSidebarToggle={handleSidebarToggle}
+					scrollFixed = {scrollFixed}
 				/>
 				<NavbarRight
 					scrollFixed={scrollFixed}

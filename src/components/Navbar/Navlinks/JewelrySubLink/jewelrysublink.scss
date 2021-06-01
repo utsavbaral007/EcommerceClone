@@ -1,0 +1,135 @@
+.jewelry-sublink {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(20%);
+	transition: 0.3s all;
+	background-color: white;
+	z-index: 1;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 0px -12px inset,
+		rgba(0, 0, 0, 0.3) 0px 0px 36px -18px inset;
+	opacity: 0;
+	visibility: hidden;
+	&:hover {
+		opacity: 1;
+		visibility: visible;
+	}
+	.main-heading {
+		border-bottom: 1px solid #e7e7e7;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		display: none;
+		p {
+			text-transform: uppercase;
+			font-size: 0.75rem;
+			letter-spacing: 1px;
+			font-weight: 600;
+		}
+		svg {
+			cursor: pointer;
+		}
+	}
+	.jewelry-sublink-contents {
+		padding: 25px;
+		.sublink-division {
+			.links-content {
+				display: flex;
+				flex-wrap: wrap;
+				.links {
+					display: flex;
+					flex-direction: column;
+					min-width: 180px;
+					flex: 1;
+          margin: 10px;
+					.heading {
+						font-size: 0.75rem;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						font-weight: 500;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						svg {
+							display: none;
+							cursor: pointer;
+							font-size: 1.3rem;
+							color: grey;
+						}
+					}
+					a {
+						font-size: 0.75rem;
+						color: grey;
+						text-decoration: none;
+						width: fit-content;
+						transition: 0.3s all;
+						&:hover {
+							text-decoration: underline;
+							color: #4263f3;
+						}
+					}
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+.sublinks-visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+@media (max-width: 1200px) {
+	.jewelry-sublink {
+		position: fixed;
+		top: 0;
+		width: 250px !important;
+		opacity: 1;
+		visibility: visible;
+		height: 100vh;
+		z-index: 1001;
+		transform: translateX(-100%);
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding: 25px 10px !important;
+		&::-webkit-scrollbar {
+			width: 5px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #e0e0e0;
+			border-radius: 10px;
+		}
+		.main-heading {
+			display: flex;
+		}
+		.jewelry-sublink-contents {
+			padding: 0 !important;
+			flex-direction: column;
+			width: 100%;
+			margin: 0;
+			.sublink-division {
+				width: 100%;
+				.links-content {
+					.links {
+						.heading {
+							border-bottom: 1px solid #e7e7e7;
+							padding-bottom: 15px;
+							svg {
+								display: block;
+							}
+						}
+						a {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.jewelry-sublink-active {
+	transform: translateX(0);
+}

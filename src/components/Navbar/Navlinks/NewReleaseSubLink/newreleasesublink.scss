@@ -1,0 +1,246 @@
+.new-release-sublink {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(20%);
+	transition: 0.3s all;
+	background-color: white;
+	z-index: 1;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 0px -12px inset,
+		rgba(0, 0, 0, 0.3) 0px 0px 36px -18px inset;
+	opacity: 0;
+	visibility: hidden;
+	&:hover {
+		opacity: 1;
+		visibility: visible;
+	}
+	.main-heading {
+		border-bottom: 1px solid #e7e7e7;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		display: none;
+		p {
+			text-transform: uppercase;
+			font-size: 0.75rem;
+			letter-spacing: 1px;
+			font-weight: 600;
+		}
+		svg {
+			cursor: pointer;
+		}
+	}
+	.new-release-sublink-contents {
+		padding: 25px;
+		.sublink-division {
+			.links-content {
+				display: flex;
+				flex-wrap: wrap;
+				.links {
+					display: flex;
+					flex-direction: column;
+					min-width: 180px;
+					flex: 1;
+					.heading {
+						font-size: 0.75rem;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						font-weight: 500;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						svg {
+							display: none;
+							cursor: pointer;
+							font-size: 1.3rem;
+							color: grey;
+						}
+					}
+					a {
+						font-size: 0.75rem;
+						color: grey;
+						text-decoration: none;
+						width: fit-content;
+						transition: 0.3s all;
+						&:hover {
+							text-decoration: underline;
+							color: #4263f3;
+						}
+					}
+				}
+			}
+		}
+		.sublink-division-right {
+			.sublink-division-card {
+				display: flex;
+				align-items: center;
+				.card-left {
+					width: 40%;
+					padding: 10px;
+					text-align: center;
+					.image {
+						position: relative;
+						height: 20%;
+						img {
+							width: 100%;
+						}
+						.hover-img {
+							position: absolute;
+							top: 0;
+							width: 100%;
+							height: 100%;
+							opacity: 0;
+							transition: 0.4s all;
+							background: url('https://cdn.shopify.com/s/files/1/0264/5000/1980/products/01_300x.jpg?v=1569989512')
+								center no-repeat;
+							background-size: cover;
+						}
+						.new {
+							position: absolute;
+							top: 10px;
+							right: 10px;
+							background-color: #5061f8;
+							color: white;
+							font-size: 0.75rem;
+							padding: 2px 10px;
+						}
+						.online-only {
+							position: absolute;
+							top: 40px;
+							right: 10px;
+							background-color: black;
+							color: white;
+							font-size: 0.75rem;
+							padding: 2px 10px;
+						}
+						&:hover {
+							& .hover-img {
+								opacity: 1;
+							}
+							& .icons {
+								opacity: 1;
+								visibility: visible;
+							}
+						}
+					}
+					.brand-name {
+						text-align: center;
+						font-size: 0.75rem;
+					}
+					.watch-name {
+						font-size: 0.75rem;
+						font-weight: 500;
+						text-align: center;
+					}
+					.ratings {
+						width: fit-content;
+						margin: 0 auto;
+						svg {
+							color: #e66b00;
+						}
+					}
+					.price {
+						text-align: center;
+						span {
+							text-decoration: line-through;
+						}
+					}
+					button {
+						width: 100%;
+						border: 1px solid black;
+						padding: 10px 0;
+						color: black;
+						outline: none;
+						transition: 0.4s all;
+						background: white;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						font-size: 0.85rem;
+						&:hover {
+							background: black;
+							color: white;
+						}
+					}
+				}
+				.card-right {
+					height: 60vh;
+					width: 50%;
+					background: url('https://cdn.shopify.com/s/files/1/0264/5000/1980/files/Slide1.jpg?v=1569931891')
+						center no-repeat;
+					background-size: cover;
+				}
+			}
+		}
+	}
+}
+.sublinks-visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+@media (max-width: 1200px) {
+	.new-release-sublink {
+		position: fixed;
+		top: 0;
+		width: 250px !important;
+		opacity: 1;
+		visibility: visible;
+		height: 100vh;
+		z-index: 1001;
+		transform: translateX(-100%);
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding: 25px 10px !important;
+		&::-webkit-scrollbar {
+			width: 5px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #e0e0e0;
+			border-radius: 10px;
+		}
+		.main-heading {
+			display: flex;
+		}
+		.new-release-sublink-contents {
+			padding: 0 !important;
+			flex-direction: column;
+			width: 100%;
+			margin: 0;
+			.sublink-division {
+				width: 100%;
+				.links-content {
+					.links {
+						.heading {
+							border-bottom: 1px solid #e7e7e7;
+							padding-bottom: 15px;
+							svg {
+								display: block;
+							}
+						}
+						a {
+							display: none;
+						}
+					}
+				}
+			}
+			.sublink-division-right {
+				width: 100%;
+				.sublink-division-card {
+					flex-direction: column;
+					.card-left {
+						width: 100%;
+						margin-bottom: 2rem !important;
+					}
+					.card-right {
+						width: 100%;
+						height: 40vh;
+					}
+				}
+			}
+		}
+	}
+}
+.new-release-sublink-active {
+	transform: translateX(0);
+}
