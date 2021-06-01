@@ -17,8 +17,7 @@ const CustomerReviewSlider = () => {
 				mouseTracking
 				infinite
 				responsive={responsive}
-				animationDuration={1500}
-				disableButtonsControls
+				animationDuration={1000}
 			>
 				<div className="customer-review-card">
 					<div className="product-image">

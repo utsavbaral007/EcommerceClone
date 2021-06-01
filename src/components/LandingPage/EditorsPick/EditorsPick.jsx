@@ -4,7 +4,7 @@ import './editorspick.scss'
 
 const EditorsPick = () => {
 	return (
-		<div className="editors-pick-container pb-4 padding-content">
+		<div className="editors-pick-container pb-5 padding-content">
 			<div className="editors-pick-content">
 				<div className="heading">
 					<p>Editor's Pick</p>

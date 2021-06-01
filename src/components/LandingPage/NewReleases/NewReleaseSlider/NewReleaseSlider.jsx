@@ -13,10 +13,10 @@ const NewReleaseSlider = () => {
 		<div className="new-release-slider mt-4">
 			<AliceCarousel
 				mouseTracking
-				infinite
 				responsive={responsive}
-				animationDuration={1500}
-				disableButtonsControls
+				animationDuration={1000}
+				infinite
+				disableDotsControls
 			>
 				<div className="new-release-card">
 					<div className="image mb-3">
@@ -252,7 +252,7 @@ const NewReleaseSlider = () => {
 						<AiFillStar />
 					</div>
 					<p className="price mb-2" style={{ color: 'red' }}>
-						<span className = "text-muted">$1,000</span> $500.00
+						<span className="text-muted">$1,000</span> $500.00
 					</p>
 					<div className="other-watches">
 						<img

@@ -4,7 +4,7 @@ import './newreleases.scss'
 
 const NewReleases = () => {
 	return (
-		<div className="new-release-container pt-5 pb-1 padding-content">
+		<div className="new-release-container pt-5 pb-4 padding-content">
 			<div className="new-release-content">
 				<div className="heading mb-2">
 					<p>New Releases</p>

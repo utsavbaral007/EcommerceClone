@@ -12,12 +12,7 @@ const ShopCollectionWatches = () => {
 
 	return (
 		<div className="shop-collection-watches col-lg-8">
-			<AliceCarousel
-				mouseTracking
-				infinite
-				responsive={responsive}
-				disableButtonsControls
-			>
+			<AliceCarousel mouseTracking disableDotsControls responsive={responsive}>
 				{watches?.map((watch, index) => (
 					<div key={index} className="watch-card">
 						<img className="mb-3" src={watch.imageUrl} alt="item" />

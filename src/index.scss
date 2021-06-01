@@ -24,6 +24,54 @@ p {
 .detail-top-content-padding {
 	padding: 12rem 50px 5rem 50px;
 }
+.alice-carousel {
+	.alice-carousel__prev-btn {
+		text-align: left;
+		left: -10px;
+		position: absolute;
+		top: 40%;
+		transform: translateY(-40%);
+		.alice-carousel__prev-btn-item {
+			font-size: 2rem;
+			background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+			color: white;
+			padding: 0 15px;
+			border-radius: 50%;
+		}
+	}
+	.alice-carousel__next-btn {
+		text-align: right;
+		right: -10px;
+		position: absolute;
+		top: 40%;
+		transform: translateY(-40%);
+		.alice-carousel__next-btn-item {
+			font-size: 2rem;
+			background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+			color: white;
+			padding: 0 15px;
+			border-radius: 50%;
+		}
+	}
+	.alice-carousel__dots {
+		.alice-carousel__dots-item.__active {
+			height: 13px;
+			width: 13px;
+			border: 1px solid #a7a7a9;
+			background: #a7a7a9;
+		}
+		.alice-carousel__dots-item {
+			height: 13px;
+			width: 13px;
+			border: 1px solid #a7a7a9;
+			background: none;
+			&:hover {
+				background: none;
+			}
+		}
+	}
+}
+
 @media (max-width: 1200px) {
 	.padding-content {
 		padding: 0 10px;
