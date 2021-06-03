@@ -18,6 +18,7 @@ const Navbar = ({ scrollFixed }) => {
 	const handleSidebarToggle = () => {
 		sideBarRef.current.classList.toggle('toggleSidebar')
 		overlayRef.current.classList.toggle('overlay-toggle')
+		document.getElementsByTagName('html')[0].classList.toggle('no-scroll')
 	}
 
 	return (
@@ -47,7 +48,7 @@ const Navbar = ({ scrollFixed }) => {
 					sideBarRef={sideBarRef}
 					overlayRef={overlayRef}
 					handleSidebarToggle={handleSidebarToggle}
-					scrollFixed = {scrollFixed}
+					scrollFixed={scrollFixed}
 				/>
 				<NavbarRight
 					scrollFixed={scrollFixed}
