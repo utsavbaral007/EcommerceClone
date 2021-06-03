@@ -3,7 +3,7 @@ import AliceCarousel from 'react-alice-carousel'
 import { AiFillStar, AiOutlineHeart, AiOutlineEye } from 'react-icons/all'
 import './cartmenuslider.scss'
 
-const CartMenuSlider = () => {
+const CartMenuSlider = ({ setCartItem, cartItem }) => {
 	const responsive = {
 		0: { items: 1 },
 		568: { items: 1 },
@@ -32,7 +32,9 @@ const CartMenuSlider = () => {
 							<p>New</p>
 						</div>
 						<div className="online-only ">Online Only</div>
-						<button>Add to cart</button>
+						<button onClick={() => setCartItem(cartItem + 1)}>
+							Add to cart
+						</button>
 					</div>
 					<p className="brand-name text-muted mb-2">Mango</p>
 					<p className="watch-name mb-2">
@@ -111,7 +113,9 @@ const CartMenuSlider = () => {
 							<p>Sale</p>
 						</div>
 						<div className="online-only">Online Only</div>
-						<button>Add to cart</button>
+						<button onClick={() => setCartItem(cartItem + 1)}>
+							Add to cart
+						</button>
 					</div>
 					<p className="brand-name text-muted mb-2">Sodling</p>
 					<p className="watch-name mb-2">
@@ -165,7 +169,9 @@ const CartMenuSlider = () => {
 							<p>New</p>
 						</div>
 						<div className="online-only d-none">Online Only</div>
-						<button>Add to cart</button>
+						<button onClick={() => setCartItem(cartItem + 1)}>
+							Add to cart
+						</button>
 						<div className="timer">
 							<div className="time">
 								<p>00</p>
@@ -236,7 +242,9 @@ const CartMenuSlider = () => {
 							<p>New</p>
 						</div>
 						<div className="online-only">Online Only</div>
-						<button>Add to cart</button>
+						<button onClick={() => setCartItem(cartItem + 1)}>
+							Add to cart
+						</button>
 					</div>
 					<p className="brand-name text-muted mb-2">Modern Amusement</p>
 					<p className="watch-name mb-2">
@@ -291,7 +299,9 @@ const CartMenuSlider = () => {
 							<p>New</p>
 						</div>
 						<div className="online-only">Online Only</div>
-						<button>Add to cart</button>
+						<button onClick={() => setCartItem(cartItem + 1)}>
+							Add to cart
+						</button>
 					</div>
 					<p className="brand-name text-muted mb-2">Coco Lee</p>
 					<p className="watch-name mb-2">

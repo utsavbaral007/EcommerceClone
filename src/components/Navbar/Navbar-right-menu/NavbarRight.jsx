@@ -7,7 +7,7 @@ import {
 } from 'react-icons/all'
 import './navbarright.scss'
 
-const NavbarRight = ({ toggleCartMenu }) => {
+const NavbarRight = ({ toggleCartMenu, cartItem }) => {
 	const [active, setActive] = useState(false)
 	return (
 		<div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 menu-items">
@@ -33,7 +33,7 @@ const NavbarRight = ({ toggleCartMenu }) => {
 					</p>
 					<div className="cart-content">
 						<AiOutlineShoppingCart />
-						<p>0</p>
+						<p>{cartItem}</p>
 					</div>
 				</div>
 				<div className="divider" />

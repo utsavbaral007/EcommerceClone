@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import './navbar.scss'
 import Navlinks from './Navlinks/Navlinks'
 import NavbarLogo from './Navbar-logo/NavbarLogo'
@@ -10,6 +10,7 @@ const Navbar = ({ scrollFixed }) => {
 	const sideBarRef = useRef()
 	const overlayRef = useRef()
 	const cartMenuRef = useRef()
+	const [cartItem, setCartItem] = useState(0)
 
 	const toggleCartMenu = () => {
 		cartMenuRef.current.classList.toggle('toggle-cart-menu')
@@ -53,9 +54,15 @@ const Navbar = ({ scrollFixed }) => {
 				<NavbarRight
 					scrollFixed={scrollFixed}
 					toggleCartMenu={toggleCartMenu}
+					cartItem={cartItem}
 				/>
 			</div>
-			<CartMenu cartMenuRef={cartMenuRef} toggleCartMenu={toggleCartMenu} />
+			<CartMenu
+				setCartItem={setCartItem}
+				cartItem={cartItem}
+				cartMenuRef={cartMenuRef}
+				toggleCartMenu={toggleCartMenu}
+			/>
 		</div>
 	)
 }

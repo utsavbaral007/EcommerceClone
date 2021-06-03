@@ -3,7 +3,7 @@ import { IoMdClose } from 'react-icons/all'
 import CartMenuSlider from './CartMenuSlider/CartMenuSlider'
 import './cartmenu.scss'
 
-const CartMenu = ({ cartMenuRef, toggleCartMenu }) => {
+const CartMenu = ({ cartMenuRef, toggleCartMenu, setCartItem, cartItem }) => {
 	return (
 		<div ref={cartMenuRef} className="cart-menu-container">
 			<div onClick={toggleCartMenu} className="close-btn text-muted">
@@ -18,7 +18,7 @@ const CartMenu = ({ cartMenuRef, toggleCartMenu }) => {
 					Continue shopping
 				</button>
 				<p className="extra-options-text">Add an extra option</p>
-				<CartMenuSlider />
+				<CartMenuSlider setCartItem={setCartItem} cartItem={cartItem} />
 			</div>
 		</div>
 	)

@@ -1,14 +1,24 @@
 import React from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import { AiFillStar, AiOutlineHeart, AiOutlineEye } from 'react-icons/all'
+import { withRouter } from 'react-router-dom'
 import './newreleaseslider.scss'
 
-const NewReleaseSlider = () => {
+const NewReleaseSlider = ({ history }) => {
 	const responsive = {
 		0: { items: 1 },
 		568: { items: 3 },
 		1024: { items: 6 },
 	}
+
+	const handleStopPropagation = (e) => {
+		e.stopPropagation()
+	}
+
+	const goToDetails = () => {
+		history.push('/details')
+	}
+
 	return (
 		<div className="new-release-slider mt-4">
 			<AliceCarousel
@@ -18,7 +28,7 @@ const NewReleaseSlider = () => {
 				infinite
 				disableDotsControls
 			>
-				<div className="new-release-card">
+				<div className="new-release-card" onClick={goToDetails}>
 					<div className="image mb-3">
 						<img
 							src="https://cdn.shopify.com/s/files/1/0264/5000/1980/products/02_300x.jpg?v=1569989512"
@@ -33,7 +43,7 @@ const NewReleaseSlider = () => {
 							<p>New</p>
 						</div>
 						<div className="online-only ">Online Only</div>
-						<button>Add to cart</button>
+						<button onClick={handleStopPropagation}>Add to cart</button>
 					</div>
 					<p className="brand-name text-muted mb-2">Mango</p>
 					<p className="watch-name mb-2">
@@ -50,7 +60,7 @@ const NewReleaseSlider = () => {
 					<div className="other-watches"></div>
 				</div>
 
-				<div className="new-release-card">
+				<div className="new-release-card" onClick={goToDetails}>
 					<div className="image mb-3">
 						<img
 							src="https://cdn.shopify.com/s/files/1/0264/5000/1980/products/14_300x.jpg?v=1569990905"
@@ -65,7 +75,7 @@ const NewReleaseSlider = () => {
 							<p>New</p>
 						</div>
 						<div className="online-only d-none">Online Only</div>
-						<button>Select options</button>
+						<button onClick={handleStopPropagation}>Select options</button>
 					</div>
 					<p className="brand-name text-muted mb-2">Paul Smith</p>
 					<p className="watch-name mb-2">Metropolis Daciniad Darturien</p>
@@ -95,7 +105,7 @@ const NewReleaseSlider = () => {
 					</div>
 				</div>
 
-				<div className="new-release-card">
+				<div className="new-release-card" onClick={goToDetails}>
 					<div className="image mb-3">
 						<img
 							src="https://cdn.shopify.com/s/files/1/0264/5000/1980/products/17_300x.jpg?v=1569991091"
@@ -113,7 +123,7 @@ const NewReleaseSlider = () => {
 							<p>Sale</p>
 						</div>
 						<div className="online-only">Online Only</div>
-						<button>Add to cart</button>
+						<button onClick={handleStopPropagation}>Add to cart</button>
 					</div>
 					<p className="brand-name text-muted mb-2">Sodling</p>
 					<p className="watch-name mb-2">
@@ -152,7 +162,7 @@ const NewReleaseSlider = () => {
 					</div>
 				</div>
 
-				<div className="new-release-card">
+				<div className="new-release-card" onClick={goToDetails}>
 					<div className="image mb-3">
 						<img
 							src="https://cdn.shopify.com/s/files/1/0264/5000/1980/products/11_20240be1-0251-4292-952e-bc37c2b4f19a_300x.jpg?v=1569991037"
@@ -167,7 +177,7 @@ const NewReleaseSlider = () => {
 							<p>New</p>
 						</div>
 						<div className="online-only d-none">Online Only</div>
-						<button>Add to cart</button>
+						<button onClick={handleStopPropagation}>Add to cart</button>
 						<div className="timer">
 							<div className="time">
 								<p>00</p>
@@ -223,7 +233,7 @@ const NewReleaseSlider = () => {
 						<p>+2</p>
 					</div>
 				</div>
-				<div className="new-release-card">
+				<div className="new-release-card" onClick={goToDetails}>
 					<div className="image mb-3">
 						<img
 							src="https://cdn.shopify.com/s/files/1/0264/5000/1980/products/03_4def74f5-9dec-4a2a-b372-521fc44042a9_300x.jpg?v=1569989653"
@@ -238,7 +248,7 @@ const NewReleaseSlider = () => {
 							<p>New</p>
 						</div>
 						<div className="online-only">Online Only</div>
-						<button>Add to cart</button>
+						<button onClick={handleStopPropagation}>Add to cart</button>
 					</div>
 					<p className="brand-name text-muted mb-2">Modern Amusement</p>
 					<p className="watch-name mb-2">
@@ -278,7 +288,7 @@ const NewReleaseSlider = () => {
 						<p>+2</p>
 					</div>
 				</div>
-				<div className="new-release-card">
+				<div className="new-release-card" onClick={goToDetails}>
 					<div className="image mb-3">
 						<img
 							src="https://cdn.shopify.com/s/files/1/0264/5000/1980/products/05_b9bf5654-af93-41bc-a214-158ed555e76f_300x.jpg?v=1569989765"
@@ -293,7 +303,7 @@ const NewReleaseSlider = () => {
 							<p>New</p>
 						</div>
 						<div className="online-only">Online Only</div>
-						<button>Add to cart</button>
+						<button onClick={handleStopPropagation}>Add to cart</button>
 					</div>
 					<p className="brand-name text-muted mb-2">Coco Lee</p>
 					<p className="watch-name mb-2">
@@ -336,4 +346,4 @@ const NewReleaseSlider = () => {
 	)
 }
 
-export default NewReleaseSlider
+export default withRouter(NewReleaseSlider)
